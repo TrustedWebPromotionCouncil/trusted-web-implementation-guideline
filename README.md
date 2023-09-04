@@ -31,10 +31,31 @@ TWDPは、以下の項目に沿って説明を行う。
 | メリット	| このパターンを適用した際の利点の説明 |
 | 注意点	| このパターンを適用する際の注意点や、適用により生じるデメリット、メリットとデメリットのトレードオフの説明 |
 
-
 ## Trusted Web デザインパターン（TWDP）一覧
 
 * [Aパターン（IssuerとVerifierの分離）](./A_パターン/README.md)
 * [Bパターン（1対1でのデータのやり取り）](./B_パターン/README.md)
 * [Cパターン（本人であることの証明）](./C_パターン/README.md)
 
+## Trusted Webの目指すべき方向性
+
+Trusted Webが実現を目指すTrustの仕組みは、特定のサービスに過度に依存せず、
+
+* ユーザ（自然人又は法人）自身が自らに関連するデータをコントロールすることを可能とし、
+* データのやり取りにおける合意形成の仕組みを取り入れ、その合意の履行のトレースを可能としつつ、
+* 検証（verify）できる領域を拡大することにより、Trustの向上を目指すものである。
+
+
+## Trusted Webアーキテクチャ
+
+Trusted Webにおけるアーキテクチャは以下の５の構成要素からなります。
+
+### Entity
+
+### Verifiable Identity
+
+### Verifiable Data
+
+### Verifiable Messaging
+
+### Verifiable Data Community
