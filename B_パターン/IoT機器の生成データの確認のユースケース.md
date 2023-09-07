@@ -29,11 +29,11 @@
 （手順）
 
 * 複合機のTPM2.0から暗号鍵ペアを生成し、秘密鍵を安全に管理する
-* 出し手(Sender)と受け手(Receiver)間で、事前のメッセージ認証を行う。(事前に共有された秘密情報からHMAC 値を計算し、初回通信時にHMAC 値を含め、検証する）
+* 出し手(Sender)と受け手(Receiver)間で、事前のメッセージ認証を行う。（事前に共有された秘密情報からHMAC 値を計算し、初回通信時にHMAC 値を含め、検証する）
 * 電子化文書をVCの形式で受け手(Receiver) のストレージに送信する
 * DIDに基づく公開鍵認証により、VCの署名検証を行う
 
-![Bパターン](./media/b-1.png)
+![Bパターン](./media/example_b-1_IoT.png)
 
 ## メリット
 
@@ -60,13 +60,13 @@
 ## アーキテクチャとの対応
 
 * Entity
-  * 従業員、メーカー
-* Verifiable Identity	
-  * 従業員情報
-* Verifiable Data	
+  * メーカー、複合機、文書管理システム、従業員
+* Verifiable Identity
+  * VDRから発行された複合機のIDと、その複合機の情報
+* Verifiable Data
   * スキャン文書
-* Verifiable Messaging	
+* Verifiable Messaging
   * DIDComm
   * VDR
-* Verifiable Data Community	
-  * メーカー
+* Verifiable Data Community
+  * スキャン文書のやりとりについて、署名や検証方法について合意を行ったエンティティの集合
