@@ -24,7 +24,7 @@
 
 ## 実装
 
-秘密鍵保管の「TPM（Trusted Platform Module）」、電子証明書フォーマットである「VC（Verifiable Credentials）」、そして、分散型識別子である「DID(Decentralized Identifiers)」を活用することで、電子化文書にデジタル署名を付与し、スキャン以後の改ざんの検知が可能な仕組みを実現できる。
+秘密鍵保管の「TPM（Trusted Platform Module）」、電子証明書フォーマットである「VC（Verifiable Credentials）[^1]」、そして、分散型識別子である「DID(Decentralized Identifiers)[^2]」を活用することで、電子化文書にデジタル署名を付与し、スキャン以後の改ざんの検知が可能な仕組みを実現できる。
 
 （手順）
 
@@ -66,7 +66,11 @@
 * Verifiable Data	
   * スキャン文書
 * Verifiable Messaging	
-  * DIDComm
+  * DIDComm[^3]
   * VDR
 * Verifiable Data Community	
   * メーカー
+
+[^1]: Verifiable Credentials Data Model v1.1 https://www.w3.org/TR/vc-data-model/
+[^2]: Decentralized Identifiers (DIDs) v1.0 https://www.w3.org/TR/did-core/
+[^3]: DIDComm Messaging v2.0 https://identity.foundation/didcomm-messaging/spec/v2.0/
