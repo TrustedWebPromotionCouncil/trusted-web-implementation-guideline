@@ -22,7 +22,7 @@ Trusted Webは、既存のインターネットとウェブというインフラ
 
 * [Aパターン（IssuerとVerifierの分離）](./A_パターン/README.md)
 * [Bパターン（1対1でのデータのやり取り）](./B_パターン/README.md)
-* [Cパターン（本人であることの証明）](./C_パターン/README.md)
+
 
 ## Trusted Webの目指すべき方向性
 
