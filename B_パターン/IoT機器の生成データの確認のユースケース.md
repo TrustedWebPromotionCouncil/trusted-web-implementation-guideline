@@ -8,6 +8,8 @@
   - [実装](#実装)
   - [メリット](#メリット)
   - [注意点](#注意点)
+  - [Trusted Webの目指すべき方向性との対応](#trusted-webの目指すべき方向性との対応)
+  - [アーキテクチャとの対応](#アーキテクチャとの対応)
 
 
 ## 解決する課題
@@ -22,16 +24,16 @@
 
 ## 実装
 
-秘密鍵保管の「TPM（Trusted Platform Module）」、電子証明書フォーマットである「VC（Verifiable Credentials）」、そして、分散型識別子である「DID(Decentralized Identifiers)」を活用することで、電子化文書にデジタル署名を付与し、スキャン以後の改ざんの検知が可能な仕組みを実現できる。
+秘密鍵保管の「TPM（Trusted Platform Module）」、電子証明書フォーマットである「VC（Verifiable Credentials）[^1]」、そして、分散型識別子である「DID(Decentralized Identifiers)[^2]」を活用することで、電子化文書にデジタル署名を付与し、スキャン以後の改ざんの検知が可能な仕組みを実現できる。
 
 （手順）
 
 * 複合機のTPM2.0から暗号鍵ペアを生成し、秘密鍵を安全に管理する
-* 出し手(Sender)と受け手(Receiver)間で、事前のメッセージ認証を行う。(事前に共有された秘密情報からHMAC 値を計算し、初回通信時にHMAC 値を含め、検証する）
+* 出し手(Sender)と受け手(Receiver)間で、事前のメッセージ認証を行う。（事前に共有された秘密情報からHMAC 値を計算し、初回通信時にHMAC 値を含め、検証する）
 * 電子化文書をVCの形式で受け手(Receiver) のストレージに送信する
 * DIDに基づく公開鍵認証により、VCの署名検証を行う
 
-![Bパターン](./media/b-1.png)
+![Bパターン](./media/example_b-1_IoT.png)
 
 ## メリット
 
@@ -43,3 +45,33 @@
 * 通信プロトコルにMQTTを用いる場合、最大メッセージサイズは256MBであるので、これよりも大きなサイズのスキャンデ
 ータを送る場合は、複数のスレッドに分割して送信することが必要となる。
 * 複数の受け手(DID)に送信する際に、送信先のDIDがどのサービスに紐づくかは、UI上で表現する必要がある。
+
+## Trusted Webの目指すべき方向性との対応
+
+* ユーザ（自然人又は法人）自身が自らに関連するデータをコントロールすることを可能
+  * 該当なし
+* データのやり取りにおける合意形成の仕組みを取り入れ
+  * 該当なし
+* その合意の履行のトレースを可能
+  * VDRによるデータの送受信の記録
+* 検証（verify）できる領域を拡大する
+  * 特定の複合機からのスキャンを確認
+
+## アーキテクチャとの対応
+
+* Entity
+  * メーカー、複合機、文書管理システム、従業員
+* Verifiable Identity
+  * VDRから発行された複合機のIDと、その複合機の情報
+* Verifiable Data
+  * スキャン文書
+* Verifiable Messaging	
+  * DIDComm[^3]
+  * VDR
+* Verifiable Data Community	
+  * スキャン文書のやりとりについて、署名や検証方法について合意を行ったエンティティの集合
+
+[^1]: Verifiable Credentials Data Model v1.1 https://www.w3.org/TR/vc-data-model/
+[^2]: Decentralized Identifiers (DIDs) v1.0 https://www.w3.org/TR/did-core/
+[^3]: DIDComm Messaging v2.0 https://identity.foundation/didcomm-messaging/spec/v2.0/
+
