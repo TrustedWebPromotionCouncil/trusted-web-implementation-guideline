@@ -9,3 +9,7 @@ eKYCによる本人確認や学生証による学割等のユースケースが�
 * [学生証を用いた学割のユースケース](./学生証を用いた学割のユースケース.md)
 
 ![Design Pattern A-1](./media/a-1.png)
+
+
+> [!WARNING]
+> * 図では、VDRがIssuer/Holderで共通だが、IssuerとHolderでDIDメソッドが異なるケースや、IssuerはVDRを使わないがHolderは使うケースもありうる
