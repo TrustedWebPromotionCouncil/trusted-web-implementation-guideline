@@ -1,6 +1,7 @@
-# Aパターン（IssuerとVerifierの分離）
+# Issuerが発行された証明書をHolderがVerifierに提示
 
-Issuer, Holder, Verifier がそれぞれ別のエンティティのパターン。
+
+Issuer, Holder, Verifier がそれぞれ別のエンティティの方式。
 IssuerがHolderに対して電子署名を施した属性の証明書を発行し、Holderは発行された証明書に自身の電子署名を施したものを、Verifierに提示することにより、HolderはVerifierに対して属性の証明を行うことができる。
 VerifierはIssuerおよびHolderの電子署名を検証することにより、Issuerが発行したHolderの属性の証明書であることを確認することができる。
 
