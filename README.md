@@ -68,8 +68,8 @@ Verifiable Messagingは、複数のエンティティ間での確実な配送を
 
 ### Verifiable Identity
 
-Verifiable Identityは、検証可能かつコンテクストに応じて最低限必要な属性からなるデジタル・アイデンティティである。 Verifiable Identityによって、対象となるデータが署名者によって確認されていることを検証者が確認でき(Verifiable Dataの実現）、データのやり取りが検証できます(Verifiable Messagingの実現） 。
+Verifiable Identityは、検証可能かつコンテクストに応じて最低限必要な属性からなるデジタル・アイデンティティです。 Verifiable Identityによって、対象となるデータが署名者によって確認されていることを検証者が確認でき(Verifiable Dataの実現）、データのやり取りが検証できます(Verifiable Messagingの実現） 。
 
 ### Verifiable Data Community
 
-Trusted Webでは、必要に応じて、高い確度で信頼できるエンティティ（Trusted Entity)によって運用されたアイデンティティ(Trusted Identity)を起点とした信頼の連鎖を構築する。データのやり取りに関係するエコシステム参加者の下でTrusted Identityを共有することにより、信頼関係の構築を容易にする。Verifiable Data Communityは、このような信頼の起点を含む情報を一定のガバナンス下で共有し、Verifiable Identityの確立を支援するアイデンティティの集合を指します。
+Trusted Webでは、必要に応じて、高い確度で信頼できるエンティティ（Trusted Entity)によって運用されたアイデンティティ(Trusted Identity)を起点とした信頼の連鎖を構築します。データのやり取りに関係するエコシステム参加者の下でTrusted Identityを共有することにより、信頼関係の構築を容易にします。Verifiable Data Communityは、このような信頼の起点を含む情報を一定のガバナンス下で共有し、Verifiable Identityの確立を支援するアイデンティティの集合を指します。
