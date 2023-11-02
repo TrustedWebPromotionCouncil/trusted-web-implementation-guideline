@@ -56,7 +56,7 @@ Trusted Webが実現を目指すTrustの仕組みは、特定のサービスに�
 
 ## Trusted Webアーキテクチャ
 
-Trusted Webにおけるアーキテクチャは以下の５の構成要素からなります。
+Trusted Webにおけるアーキテクチャは以下の構成要素からなります。
 
 ### Verifiable Data
 
