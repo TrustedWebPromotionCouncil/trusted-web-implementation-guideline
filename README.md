@@ -60,16 +60,16 @@ Trusted Webにおけるアーキテクチャは以下の構成要素からなり
 
 ### Verifiable Data
 
-デジタル署名技術を活用することにより、「対象となるデータが署名者によって確認されていること」を検証者が確認できるデータ
+Verifiable Dataは、デジタル署名技術を活用することにより、「対象となるデータが署名者によって確認されていること」を検証者が確認できるデータです。
 
 ### Verifiable Messaging
 
-複数のエンティティ間での確実な配送をメッセージの送受信の順序性を含め確認することができるもの。
+Verifiable Messagingは、複数のエンティティ間での確実な配送をメッセージの送受信の順序性を含め確認することができます。
 
 ### Verifiable Identity
 
-Verifiable Identityは、検証可能かつコンテクストに応じて最低限必要な属性からなるデジタル・アイデンティティである。 Verifiable Identityによって、対象となるデータが署名者によって確認されていることを検証者が確認でき(Verifiable Dataの実現）、データのやり取りが検証できる(Verifiable Messagingの実現） 。
+Verifiable Identityは、検証可能かつコンテクストに応じて最低限必要な属性からなるデジタル・アイデンティティである。 Verifiable Identityによって、対象となるデータが署名者によって確認されていることを検証者が確認でき(Verifiable Dataの実現）、データのやり取りが検証できます(Verifiable Messagingの実現） 。
 
 ### Verifiable Data Community
 
-Trusted Webでは、必要に応じて、高い確度で信頼できるエンティティ（Trusted Entity)によって運用されたアイデンティティ(Trusted Identity)を起点とした信頼の連鎖を構築する。データのやり取りに関係するエコシステム参加者の下でTrusted Identityを共有することにより、信頼関係の構築を容易にする。Verifiable Data Communityは、このような信頼の起点を含む情報を一定のガバナンス下で共有し、Verifiable Identityの確立を支援するアイデンティティの集合を指す。
+Trusted Webでは、必要に応じて、高い確度で信頼できるエンティティ（Trusted Entity)によって運用されたアイデンティティ(Trusted Identity)を起点とした信頼の連鎖を構築する。データのやり取りに関係するエコシステム参加者の下でTrusted Identityを共有することにより、信頼関係の構築を容易にする。Verifiable Data Communityは、このような信頼の起点を含む情報を一定のガバナンス下で共有し、Verifiable Identityの確立を支援するアイデンティティの集合を指します。
