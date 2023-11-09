@@ -9,3 +9,6 @@ IoT機器の生成データの確認や、著作者による著作権の証明�
 * [IoT機器の生成データの確認のユースケース](IoT機器の生成データの確認のユースケース.md)
 
 ![Design Pattern B-1](./media/b-1.png)
+
+> [!WARNING]
+> * 図では、VDRがIssuer/Holderで共通だが、IssuerとHolderでDIDメソッドが異なるケースや、IssuerはVDRを使わないがHolderは使うケースもありうる
