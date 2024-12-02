@@ -59,14 +59,12 @@
 
 ## アーキテクチャとの対応
 
-* Entity
-  * メーカー、複合機、文書管理システム、従業員
 * Verifiable Identity
-  * VDRから発行された複合機のIDと、その複合機の情報
+  * VDRから発行された複合機のIdentifierと、その複合機の属性情報
 * Verifiable Data
   * スキャン文書
 * Verifiable Messaging
   * DIDComm
   * VDR
-* Verifiable Data Community
-  * スキャン文書のやりとりについて、署名や検証方法について合意を行ったエンティティの集合
+* Verifiable Identity Community
+  * スキャン文書のやりとりについて、署名や検証方法について合意を行ったアイデンティティの集合
